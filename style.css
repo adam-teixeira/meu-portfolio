@@ -1,0 +1,114 @@
+@font-face {
+    font-family: MissFardose;
+    src: url("../0. Portifólio/Fontes/MissFajardose-Regular.ttf");
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url('../0. Portifólio/Fontes/Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: WindSong;
+    src: url('../0. Portifólio/Fontes/WindSong/WindSong-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+    background-color: #FFFBF2;
+}
+
+#conteudo {
+    margin: 0% 10%;
+}
+
+#logo{
+    font-family: windsong;
+    font-size: 60px;
+    margin-right: auto;
+    padding: 0px 20px 0px 0px;
+}
+
+p, button, li {
+    font-size: 16px;
+}
+
+#menu{
+    position: sticky;
+    margin: 0% 3%;
+    top: 0; /* gruda no topo */
+}
+
+#itens-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+ul{
+    list-style: none;
+
+}
+
+nav ul li{
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 2px solid transparent; /*espaço reservado pra borda no hover*/
+    transition: border-color 0.5s ease;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #FF7999;
+}
+
+nav button {
+    margin-left: auto
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: #ff799800;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+}
+
+button{
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color:#FF7999;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 550px;
+}
+
+.text-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    gap: 25px;
+}
+
+#landing-title {
+    font-size: 40px;
+}
+
+.foto-landing {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 10px;
+}
