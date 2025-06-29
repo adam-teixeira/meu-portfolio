@@ -13,13 +13,77 @@
     src: url('../0. Portifólio/Fontes/WindSong/WindSong-Regular.ttf');
 }
 
+
+:root {
+    --cor-texto: #23272a;
+    --cor-primaria: #FFFBF2;
+    --cor-destaque: #f85483;
+    --cor-amarelo: #ffde59;
+    --cor-secundaria: white;
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Quicksand;
-    background-color: #FFFBF2;
 }
 
+body {
+    font-family: quicksand;
+    background-color: var(--cor-primaria);
+
+}
+
+section:not(#landing-page) {
+    margin: 100px 0 0 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.title{
+    padding: 0px 0px 10px 0px;
+    font-size: 18px;
+}
+
+.text {
+    padding: 0px 0px 15px 0px;
+}
+
+.section-title {
+    font-size: 30px;
+    padding: 0px 0px 10px 0px;
+}
+
+.section-subtitle{
+    font-size: 25px;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: var(--cor-secundaria);
+    padding: 25px;
+    width: 50%;
+    height: auto;
+    box-shadow: 0px 5px 10px 1px #0000000f;
+    transition: 0.3s linear;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* Landing Page */
 #conteudo {
     margin: 0% 10%;
 }
@@ -33,12 +97,24 @@
 
 p, button, li {
     font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+i{
+    padding-right: 10px;
+}
+
+p, h1, h2, h3, a{
+    color: var(--cor-texto);
 }
 
 #menu{
     position: sticky;
     margin: 0% 3%;
     top: 0; /* gruda no topo */
+    background-color: var(--cor-primaria);
+    z-index: 10;;
 }
 
 #itens-menu{
@@ -51,18 +127,15 @@ p, button, li {
 
 ul{
     list-style: none;
-
 }
 
 nav ul li{
     padding: 10px;
     margin: 10px;
-    border-bottom: 2px solid transparent; /*espaço reservado pra borda no hover*/
-    transition: border-color 0.5s ease;
 }
 
-nav ul li:hover {
-    border-bottom: 2px solid #FF7999;
+nav ul li a:hover {
+    color: var(--cor-destaque);
 }
 
 nav button {
@@ -70,21 +143,60 @@ nav button {
 }
 
 a {
-    color: black;
     text-decoration: none;
-    background-color: #ff799800;
+    background-color: transparent;
     cursor: pointer;
+    transition: 0.1s linear;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 8px 20px;
+    transition: 0.3s linear;
 }
 
 button a {
-    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
-button{
-    padding: 10px 10px;
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color:#FF7999;
+.btn-normal{
+    background-color: var(--cor-destaque);
+}
+
+.btn-normal a {
+    color: var(--cor-primaria);
+}
+
+.btn-normal:hover{
+    border: 1px solid var(--cor-destaque);
+    background-color: transparent;
+    transform: scale(1.02);
+}
+
+.btn-normal:hover a {
+    color: var(--cor-destaque);
+}
+
+.btn-contact {
+    background-color: var(--cor-amarelo);
+}
+
+.btn-contact a {
+    color: var(--cor-texto);
+}
+
+.btn-contact:hover{
+    border: 1px solid var(--cor-amarelo);
+    background-color: transparent;
+    transform: scale(1.02);
+}
+
+.btn-contact:hover a {
+    color: var(--cor-amarelo);
 }
 
 #landing-page {
@@ -99,6 +211,7 @@ button{
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
+    height: auto;
     gap: 25px;
 }
 
@@ -109,6 +222,152 @@ button{
 .foto-landing {
     display: flex;
     justify-content: center;
-    width: 60%;
-    margin: 10px;
+    width: 53%;
+    height: auto;
+    margin-left: 30px;
+
+}
+
+.foto-landing img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* Section 1: Blog */
+
+#section-blog .container-card .card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-blog:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+/* Section 2: About me */
+#section-aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.aboutme-description h1{
+    padding: 20px 0px;
+}
+
+.aboutme-description{
+    width: 55%;
+}
+
+.foto-perfil {
+    padding: 20px;
+    width: 35%;
+}
+
+.foto-perfil img {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.knowledge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.knowledge li {
+    background-color: var(--cor-amarelo) ;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+/* Section 3: Portfolio */
+#section-portfolio .section-header{
+    padding-top: 30px;
+}
+
+.img-portfolio {
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+
+.img-portfolio img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* Section 4: Events */
+
+
+/* Section 5: testimonials */
+
+#section-testimonials .container-card .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: none;
+    border: 1px solid var(--cor-texto);
+}
+
+#section-testimonials .container-card .card:hover {
+    background-color: var(--cor-amarelo);
+    transform: none;
+    cursor: default;
+}
+
+.identification {
+    display: flex;
+    padding: 20px 0px 0px 0px;
+    gap: 10px;
+}
+
+.photo img{
+    object-fit: cover;
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
+
+
+/* Footer */
+footer {
+    margin: 100px 0px 30px 0px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px
+}
+
+.network {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+}
+
+.network li i{
+    font-size: 20px;
+    transition: 0.2s linear;
+
+}
+
+.network li i:hover{
+    color: var(--cor-destaque);
+    transform: scale(1.03);
 }

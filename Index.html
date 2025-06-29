@@ -6,6 +6,7 @@
     <title>Adam S.</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <nav id="menu">
@@ -16,7 +17,7 @@
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Testimonials</a></li>
-            <button><a href="#">Contact me</a></button>
+            <button class="btn-contact"><a href="#">Contact</a></button>
         </ul>
     </nav>
 
@@ -25,58 +26,70 @@
         <!-- Landing Page -->
         <section id="landing-page">
             <div class="text-landing">
-                <h1 id="landing-title">Hi, I am Adam, <br>Computer Engineering</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button><a href="#">Know more about me!</a></button>
+                <h1 id="landing-title">Hi, I am Adam, <br> Computer Engineering</h1>
+                <p>I combine technology, art and accessibility to transform ideas into innovative solutions. My dream is to live intercultural experiences and take with me the mission of making empathetic technology on a global scale.</p>
+                <button class="btn-normal"><a href="#"><i class="fa-regular fa-circle-down"></i>Come meet me!</a></button>
             </div>
 
             <div class="foto-landing">
-                <img src="" alt="Foto">
+                <img src="../0. Portifólio/assets/award me.png" alt="Foto">
             </div>
         </section>
     
         <!-- Section 1: Blog -->
         <section id="section-blog">
-            <h1 class="section-title">My blog</h1>
-            <button><a href="#">Visit my Medium</a></button>
-            <div class="card-blog">
-                <h3 class="title">Making a design system from scratch</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <div class="section-header">
+                <h1 class="section-title">My blog</h1>
+                <button class="btn-normal"><a href="https://medium.com/@adamsts"  target="_blank"><i class="fa-brands fa-medium"></i>View in Medium</a></button>
             </div>
-    
-            <div class="card-blog">
-                <h3 class="title">Making a design system from scratch</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+
+            <div class="container-card">
+                <div class="card"><a href="https://medium.com/@adamsts/html-for-beginners-understanding-the-skeleton-of-the-web-dbaec75e4b71" target="_blank">
+                    <h3 class="title">HTML for Beginners: Understanding the Skeleton of the Web</h3>
+                    <p>If you’re just starting out in web development, HTML is your first building block. But it’s not just about writing tags , it’s about understanding structure, semantics, and how browsers interpret your code. In this article, I’ll walk you through the very basics of HTML and how it forms the skeleton of every website.</p>
+                    </a>
+                </div>
+        
+                <div class="card">
+                    <h3 class="title">Making a design system from scratch</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
             </div>
     
         </section>
     
         <!-- Section 2: About me -->
          <section id="section-aboutme">
-            <div class="foto-perfil"><img src="" alt="Homem de 23 anos, cabelo azul cacheado, pele parda e olhos castanhos."></div>
+            <div class="foto-perfil"><img src="../0. Portifólio/assets/formal me.jpeg" alt="Homem de 23 anos, cabelo azul cacheado, pele parda e olhos castanhos."></div>
             
             <div class="aboutme-description">
                 <h1 class="section-title">About me</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <p class="text">I have a special affection for everything that connects technology and people. I'm a Computer Engineering student, an illustrator in my free time, and passionate about creating solutions that touch lives — whether through an app interface, a watercolor stroke, or a handmade assistive prototype.</p>
+                <p class="text">I've developed projects born from personal questions that turned into bridges between people and possibilities: a pair of electronic glasses for people with visual impairments, a robotic hand for ALS patients, automation tools that support NGOs in their routines, and a UX-focused app for Russian restaurants in Brazil (yes, I'm also learning Russian!).</p>
+                <p class="text">I believe empathy is the engine of innovation. I love listening to meaningful stories, exploring new cultures (I’m addicted to learning languages), and turning all of that into something useful, beautiful, and accessible.</p>
+                <p class="text">If my work inspires you, reaching out would make my day. Welcome to my world — a place where code, art, dreams, and a genuine desire to do things differently come together!</p>
+
+                
+                <div class="aboutme-knowledge">
+                    <h3 class="title">knowledge</h3>
+                    <ul class="knowledge">
+                        <li><i class="fa-brands fa-html5"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt"></i></i>CSS</li>
+                        <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                        <li><i class="fa-brands fa-node-js"></i>Node.js</li>
+                        <li><i class="fa-brands fa-react"></i>React</li>
+                        <li>MySQL</li>
+                        <li><i class="fa-brands fa-figma"></i>Figma</li>
+                        <li><i class="fa-brands fa-microsoft"></i>Microsoft Office</li>
+                        <li><i class="fa-brands fa-google"></i>Google Workspace</li>
+                        <li>PowerBI</li>
+                        <li><i class="fa-brands fa-java"></i>Java</li>
+                        <li><i class="fa-brands fa-python"></i>Python</li>
+                        <li><i class="fa-brands fa-git"></i>Git</li>
+                    </ul>
+                </div>
             </div>
          
-            <div class="aboutme-knowledge">
-                <h3 class="title">knowledge</h3>
-                <ul class="knowledge">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>MySQL</li>
-                    <li>UX/UI Design</li>
-                    <li>Microsoft Office</li>
-                    <li>Google Workspace</li>
-                    <li>PowerBI</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                </ul>
-                <p><a href="#">View Certificates</a></p>
-            </div>
         </section>
     
         <!-- Section 3: Portfolio -->
@@ -84,89 +97,137 @@
             <h1 class="section-title">My portfolio</h1>
     
             <!-- Sub-Section: Projects -->
-            <h2 class="section-subtitle">Projects</h2>
-            <button><a href="#">View in Dribble</a></button>
-            <div class="card-portfolio">
-                <h3 class="title">Project Title</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-                <p><a href="#">View in Dribble</a></p>
+             <div class="section-header">
+                <h2 class="section-subtitle">Projects</h3>
+                <button class="btn-normal"><a href="#"><i class="fa-brands fa-dribbble"></i>View in Dribble</a></button>
             </div>
-    
-            <div class="card-portfolio">
-                <h3 class="title">Project Title 2</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-                <p><a href="#">View in Dribble</a></p>
-            </div>
-    
-            <div class="card-portfolio">
-                <h3 class="title">Project Title 3</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-                <p><a href="#">View in Dribble</a></p>
+            <div class="container-card">
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Project"></div>
+                    <h3 class="title">Robotic hand for ALS patients</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
+        
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Project"></div>
+                    <h3 class="title">Sensor Optics</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
+        
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Project"></div>
+                    <h3 class="title">Dominion</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
+
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Project"></div>
+                    <h3 class="title">Matrioshka's</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
             </div>
     
             <!-- Sub-Section: Illustrations -->
-            <h2 class="section-subtitle">Illustrations</h2>
-            <button><a href="#">View in Instagram</a></button>
-            <div class="card-portfolio">
-                <h3 class="title">Drawing Title</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-                <p><a href="#">View in Instagram</a></p>
+             <div class="section-header">
+                <h2 class="section-subtitle">Illustrations</h2>
+                <button class="btn-normal"><a href="#"><i class="fa-brands fa-instagram"></i>View in Instagram</a></button>
             </div>
-    
-            <div class="card-portfolio">
-                <h3 class="title">Drawing Title 2</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-                <p><a href="#">View in Instagram</a></p>
-            </div>
-    
-            <div class="card-portfolio">
-                <h3 class="title">Drawing Title 3</h3>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
-                <p><a href="#">View in Instagram</a></p>
+            <div class="container-card">
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Illustration"></div>
+                    <h3 class="title">Drawing Title</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
+        
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Illustration"></div>
+                    <h3 class="title">Drawing Title 2</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
+        
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Illustration"></div>
+                    <h3 class="title">Drawing Title 3</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
+
+                <div class="card">
+                    <div class="img-portfolio"><img src="../0. Portifólio/assets/cat.jpg" alt="Illustration"></div>
+                    <h3 class="title">Drawing Title 4</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                </div>
             </div>
             
         </section>
     
         <!-- Section 4: Events -->
         <section id="section-events">
+            <h1 class="section-title">Events galery</h1>
             <div class="foto-evento1"><img src="" alt=""></div>
             <h3 class="title">Making a design system from scratch</h3>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </section>
     
-        <!-- Section 5:  -->
+        <!-- Section 5: testimonials -->
         <section id="section-testimonials">
-            <button><a href="#">Visit my Linkedin</a></button>
-            <div class="card-testimonials">
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div><img src="" alt=""></div>
-                <p>Annahi Castellano</p>
-                <p>Cargo atual</p>
+            <div class="section-header">
+                <h1 class="section-title">Testimonials from colleagues</h1>
+                <button class="btn-normal"><a href="https://www.linkedin.com/in/adam-sousa/details/recommendations/?detailScreenTabIndex=0" target="_blank"><i class="fa-brands fa-linkedin-in"></i></i>View in Linkedin</a></button>
             </div>
-    
-            <div class="card-testimonials">
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div><img src="" alt=""></div>
-                <p>Annahi Castellano</p>
-                <p>Cargo atual</p>
-            </div>
-    
-            <div class="card-testimonials">
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div><img src="" alt=""></div>
-                <p>Annahi Castellano</p>
-                <p>Cargo atual</p>
+            <div class = "container-card">
+                <div class="card">
+                    <p>Adam impressed me from the moment we met, he always demonstrated great organization, commitment, a desire to learn, technology skills, great communication, he was always very helpful and an incredible person to have on the team!!</p>
+                    <div class="identification">
+                        <div class="photo">
+                            <img src="../0. Portifólio/assets/annahi.jpg" alt="White young woman with blond hair smiling">
+                        </div>
+                        <div class="name">
+                            <p><strong>Annahi Castellano</strong></p>
+                            <p>English Tutor</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+        
+                <div class="card">
+                    <p>In addition to all the positive aspects of having Adam as a work partner, his sensitive listening and agility were what impressed me most about him. On all fronts, he knew how to collaborate generously and was very creative.</p>
+                    <div class="identification">
+                        <div class="photo">
+                            <img src="../0. Portifólio/assets/Gabriella.jpg" alt="Black young woman smiling">
+                        </div>
+                        <div class="name">
+                            <p><strong>Gabriella Nacor</strong></p>
+                            <p>Journalist and visual artist</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+        
+                <div class="card">
+                    <p>Adam has always treated others with simplicity and empathy. He stands out for his ability to solve unexpected problems and manage conflicts between colleagues. I have great memories of the times we worked together and I would not hesitate to recommend Adam for any business role.</p>
+                    <div class="identification">
+                        <div class="photo">
+                            <img src="../0. Portifólio/assets/Yuri.jpg" alt="Black young man using pink t-shirt">
+                        </div>
+                        <div class="name">
+                            <p><strong>Yuri Santiago</strong></p>
+                            <p>Full Stack Developer</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
         </section>
+
     
-        <footer id="section-contact">
-            <div class="network">
-                <a href="#"><img src="" alt="Linkedin"></a>
-                <a href="#"><img src="" alt="Instagram"></a>
-                <a href="#"><img src="" alt="Email"></a>
-                <a href="#"><img src="" alt="Medium"></a>
-               <a href="#"><img src="" alt="GitHub"></a>
-            </div>
+        <footer>
+            <ul class="network">
+                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-medium"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
             <p>Developed by Adam Sousa, 2025.</p>
         </footer>
 
